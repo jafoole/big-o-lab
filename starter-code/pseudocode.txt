@@ -26,7 +26,7 @@ func mergeSort( var a as array )
 end func
 
 '''
-O(nlog(n)) - The reason for this is because of the array being divided by 2. With Merge sorts they keep on being split. Divide & Conquer.
+O(log(n)) - The reason for this is because of the array being divided by 2. With Merge sorts they keep on being split. Divide & Conquer.
 '''
 
 func merge( var a as array, var b as array )
@@ -49,7 +49,9 @@ func merge( var a as array, var b as array )
 end func
 
 '''
-O(n^3) - the reason for this is that there are three "while" loops. 
+O(n) - the reason for this is that there are three "while" loops. 
+
+When you combine the two together then you get O(nlog(n);
 '''
 
 Selection Sort:
